@@ -11,7 +11,7 @@ RUN apt-get install -y oracle-java8-installer
 
 #install tomcat
 WORKDIR /opt
-RUN wget http://apache.go-parts.com/tomcat/tomcat-8/v8.0.26/bin/apache-tomcat-8.0.26.tar.gz
+RUN wget http://archive.apache.org/dist/tomcat/tomcat-8/v8.0.26/bin/apache-tomcat-8.0.26.tar.gz
 RUN tar -zxvf apache-tomcat-8.0.26.tar.gz
 RUN mv apache-tomcat-8.0.26 /tomcat
 
